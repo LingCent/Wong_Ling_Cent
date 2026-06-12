@@ -1,0 +1,92 @@
+/* css/style.css */
+:root {
+    --bg: #F7F7F5;
+    --text: #1A1A1A;
+    --line: #E8E4DB;
+    --khaki: #CBBFA9;
+}
+
+* {
+    cursor: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* Base Engine: GPU Canvas */
+#matrix-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.6;
+    will-change: transform;
+}
+
+/* Film Grain Noise */
+.noise-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Hardware Accelerated Difference Cursor */
+.cursor {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--text);
+    position: fixed;
+    left: 0; top: 0;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform, width, height;
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    mix-blend-mode: difference;
+    background-color: white;
+}
+.cursor.active {
+    width: 60px; height: 60px;
+}
+
+/* Heavy Glassmorphism */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.03), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Typography & Layout adjustments */
+h1, h2, h3 { letter-spacing: -0.03em; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.content-layer { position: relative; z-index: 10; }
+
+.section-title {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 3rem;
+    color: #1A1A1A;
+}
+.section-title span {
+    color: #8C8C8C; 
+}
+
+/* Terminal Scanline Effect */
+.scanline {
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+input[type="text"]:focus { outline: none; }

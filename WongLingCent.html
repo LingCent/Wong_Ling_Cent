@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wong Ling Cent - Software Developer | Web Designer </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <canvas id="matrix-canvas"></canvas>
+    <div class="noise-overlay"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <nav class="fixed top-0 left-0 w-full z-40 glass-panel border-b-0 border-white/20">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="font-bold tracking-widest flex items-center gap-2 text-sm uppercase">
+                <div class="w-1.5 h-1.5 bg-black rounded-full"></div>
+                Wong Ling Cent
+            </div>
+            <div class="hidden md:flex gap-10 text-xs font-bold tracking-widest text-neutral-500 uppercase">
+                <a href="#about" class="magnetic-target hover:text-black transition-colors">About</a>
+                <a href="#skills" class="magnetic-target hover:text-black transition-colors">Tech Stack</a>
+                <a href="#experience" class="magnetic-target hover:text-black transition-colors">Experience</a>
+                <a href="#projects" class="magnetic-target hover:text-black transition-colors">Projects</a>
+            </div>
+            <a href="#" class="contact-trigger magnetic-target px-5 py-2 rounded-full border border-black bg-transparent hover:bg-black hover:text-white transition-all duration-300 text-xs font-bold tracking-widest uppercase">
+                Connect <iconify-icon icon="solar:arrow-right-linear" class="ml-1 align-middle"></iconify-icon>
+            </a>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex items-center content-layer pt-20">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="inline-flex items-center gap-2 px-3 py-1 mb-8 text-[10px] font-mono tracking-widest uppercase border border-[#CBBFA9] rounded-full bg-white/50 backdrop-blur-sm text-neutral-600">
+                <div class="w-2 h-2 rounded-full bg-green-500"></div> System Status: Open to Work
+            </div>
+            
+            <h1 class="text-[clamp(4rem,10vw,9rem)] font-black leading-[0.85] text-balance mb-6 uppercase tracking-tighter drop-shadow-sm">
+                WONG LING<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 via-gray-400 to-gray-300">CENT</span>
+            </h1>
+            
+            <div class="flex flex-col md:flex-row gap-8 justify-between items-start md:items-end border-t border-black/10 pt-8 mt-12">
+                <div>
+                    <h3 class="text-xl font-bold tracking-widest uppercase mb-2">Software Developer <span class="text-neutral-400 font-light">&</span><br>Web Designer</h3>
+                </div>
+                <p class="max-w-md text-sm text-neutral-600 font-medium leading-relaxed">
+                    I am a Software Developer and Web Designer passionate about building
+modern web applications, intelligent solutions, and user-centered digital
+experiences. My focus is on combining clean engineering, intuitive design,
+and emerging technologies to create products that are both functional and impactful.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 content-layer">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="text-xs font-bold tracking-widest text-neutral-400 uppercase mb-4">— INVENTORY</div>
+            <h2 class="section-title">Tech <span>Stack</span></h2>
+
+            <div class="flex flex-wrap justify-center gap-4 mt-12">
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">C# .NET</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">Java</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">Android SDK</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">SQL / MySQL</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">Firebase</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">Python</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">HTML</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">Tailwind CSS</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">JavaScript / GSAP</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">UI/UX Prototyping</span>
+                <span class="glass-panel px-6 py-3 rounded-full text-sm font-semibold tracking-wide border border-black/5 hover:border-black/30 transition-colors magnetic-target">AI API Integration</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 content-layer border-t border-black/5 bg-white/20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-xs font-bold tracking-widest text-neutral-400 uppercase mb-4">— PROFESSIONAL LOG</div>
+            <h2 class="section-title">Work & <span>Impact</span></h2>
+
+            <div class="space-y-6">
+                <div class="glass-panel rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 transition-colors hover:bg-white/50 magnetic-target cursor-none">
+                    <div class="md:w-1/4 shrink-0">
+                        <div class="text-[10px] font-bold tracking-widest text-neutral-400 uppercase mb-1">Duration</div>
+                        <div class="text-sm font-bold mb-6">Oct 2025 — Jan 2026</div>
+                        <div class="text-[10px] font-bold tracking-widest text-neutral-400 uppercase mb-1">Location</div>
+                        <div class="text-sm font-bold">Kuching, Sarawak</div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-2xl font-black uppercase tracking-tight mb-1">Accountsoft Innovation (Intern)</h3>
+                        <div class="text-xs font-bold tracking-widest text-green-600 uppercase mb-6">C# Developer / Integration</div>
+                        <ul class="space-y-3 text-sm text-neutral-600 leading-relaxed font-medium mb-8">
+                            <li class="flex gap-3"><span class="text-neutral-300">•</span> Architected custom C# plugins for the AutoCount ecosystem.</li>
+                            <li class="flex gap-3"><span class="text-neutral-300">•</span> Automated stock reporting to drastically reduce client onboarding latency.</li>
+                            <li class="flex gap-3"><span class="text-neutral-300">•</span> Refactored system integrations to improve long-term code maintainability.</li>
+                        </ul>
+                        <div class="text-[10px] font-mono tracking-widest text-neutral-400 uppercase">
+                            Tools: C#, .NET, AutoCount ERP, SQL
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 transition-colors hover:bg-white/50 magnetic-target cursor-none">
+                    <div class="md:w-1/4 shrink-0">
+                        <div class="text-[10px] font-bold tracking-widest text-neutral-400 uppercase mb-1">Duration</div>
+                        <div class="text-sm font-bold mb-6">Jan 2023 — Jun 2023</div>
+                        <div class="text-[10px] font-bold tracking-widest text-neutral-400 uppercase mb-1">Location</div>
+                        <div class="text-sm font-bold">Sibu, Sarawak</div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-2xl font-black uppercase tracking-tight mb-1">Sarawak Chinese Annual Conference (Intern)</h3>
+                        <div class="text-xs font-bold tracking-widest text-green-600 uppercase mb-6">Android Developer</div>
+                        <ul class="space-y-3 text-sm text-neutral-600 leading-relaxed font-medium mb-8">
+                            <li class="flex gap-3"><span class="text-neutral-300">•</span> Developed a secure internal communication Android application.</li>
+                            <li class="flex gap-3"><span class="text-neutral-300">•</span> Engineered real-time database synchronization via Google Firebase.</li>
+                            <li class="flex gap-3"><span class="text-neutral-300">•</span> Implemented secure login protocols to protect internal staff data.</li>
+                        </ul>
+                        <div class="text-[10px] font-mono tracking-widest text-neutral-400 uppercase">
+                            Tools: Java, Android SDK, Firebase Realtime DB
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="projects" class="py-24 content-layer border-t border-black/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-xs font-bold tracking-widest text-neutral-400 uppercase mb-4">— PORTFOLIO</div>
+        <h2 class="section-title">Featured <span>Works</span></h2>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+    
+            <a href="https://github.com/LingCent/GridLock" target="_blank" rel="noopener noreferrer" class="glass-panel rounded-3xl group magnetic-target cursor-none flex flex-col overflow-hidden transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                
+                <div class="relative h-64 w-full overflow-hidden bg-[#1A1A1A]">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex items-center justify-center">
+                        <span class="font-mono text-[10px] tracking-widest text-white/90 border border-white/20 px-4 py-1.5 rounded-sm bg-black/40 backdrop-blur-md">
+                            [ VIEW_REPOSITORY ]
+                        </span>
+                    </div>
+                    <img src="images/gridlock.png" alt="GridLock Matrix Authentication" class="h-full w-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                </div>
+                
+                <div class="p-8 flex-1 flex flex-col bg-transparent">
+                    <div class="text-[10px] font-mono tracking-widest text-neutral-400 uppercase mb-3">[ Dec 2025 — May 2026 ]</div>
+                    
+                    <h3 class="font-black text-2xl uppercase tracking-tight mb-2 text-neutral-800">GridLock</h3>
+                    <p class="text-sm text-neutral-500 mb-4 font-medium">Applied Cryptography / Visual Authentication</p>
+                    
+                    <p class="text-sm text-neutral-600 leading-relaxed mb-6 flex-1">
+                        A matrix-based graphical authentication scheme built to cryptographically defend against shoulder-surfing attacks, replacing vulnerable text passwords.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 text-[10px] font-bold tracking-widest text-neutral-400 uppercase">
+                        <span>#FYP</span> <span>#Security</span> <span>Java</span> <span>Firebase</span> <span>Android</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="glass-panel rounded-3xl group magnetic-target cursor-none flex flex-col overflow-hidden transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                
+                <div class="relative h-64 w-full overflow-hidden bg-[#1A1A1A]">
+                    <img src="images/orderSystem.png" alt="Poli Ordering System" class="h-full w-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                </div>
+                
+                <div class="p-8 flex-1 flex flex-col bg-transparent">
+                    <div class="text-[10px] font-mono tracking-widest text-neutral-400 uppercase mb-3">[ July 2022 — Dec 2022 ]</div>
+
+                    <h3 class="font-black text-2xl uppercase tracking-tight mb-2 text-neutral-800">Poli Ordering System</h3>
+                    <p class="text-sm text-neutral-500 mb-4 font-medium">Full-Stack Mobile Architecture</p>
+                    
+                    <p class="text-sm text-neutral-600 leading-relaxed mb-6 flex-1">
+                        Comprehensive campus application handling the full transactional lifecycle—from browsing food services to secure checkout, synchronized via Firebase.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 text-[10px] font-bold tracking-widest text-neutral-400 uppercase">
+                        <span>#FYP</span> <span>Java</span> <span>Firebase</span> <span>Android</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-24">
+        <div class="text-xs font-bold tracking-widest text-neutral-400 uppercase mb-6">— UI / UX ARCHITECTURE</div>
+    
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-panel rounded-2xl group magnetic-target cursor-none ui-trigger overflow-hidden flex flex-col transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]" 
+            data-gallery="images/QR_order/cart.png, images/QR_order/confirm_order.png, images/QR_order/food_detail.png, images/QR_order/homepage.png">
+            
+            <div class="relative h-56 w-full overflow-hidden bg-[#1A1A1A]">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex items-center justify-center">
+                    <span class="font-mono text-[10px] tracking-widest text-white/90 border border-white/20 px-4 py-1.5 rounded-sm bg-black/40 backdrop-blur-md">
+                        [ ENTER_GALLERY ]
+                    </span>
+                </div>
+                <img src="images/web_order.png" class="h-full w-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+            </div>
+            
+            <div class="p-5 text-center border-t border-black/5 bg-transparent flex-1 flex items-center justify-center">
+                <h4 class="font-black text-sm uppercase tracking-tight text-neutral-800">Transactional Interface</h4>
+            </div>
+        </div>
+
+        <div class="glass-panel rounded-2xl group magnetic-target cursor-none ui-trigger overflow-hidden flex flex-col transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]" 
+            data-gallery="images/logistics_system/homepage.png, images/logistics_system/logistics_page.png, images/logistics_system/post_detail.png, 
+            images/logistics_system/create_entry.png, images/logistics_system/spatial_page.png, images/logistics_system/stakeholder_page.png,
+            images/logistics_system/predictive_page.png, images/logistics_system/immutable_page.png, images/logistics_system/finance_page.png,
+            images/logistics_system/document_page.png, images/logistics_system/setting_page.png">
+            
+            <div class="relative h-56 w-full overflow-hidden bg-[#1A1A1A]">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex items-center justify-center">
+                    <span class="font-mono text-[10px] tracking-widest text-white/90 border border-white/20 px-4 py-1.5 rounded-sm bg-black/40 backdrop-blur-md">
+                        [ ENTER_GALLERY ]
+                    </span>
+                </div>
+                <img src="images/logistics_system.png" class="h-full w-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+            </div>
+            
+            <div class="p-5 text-center border-t border-black/5 bg-transparent flex-1 flex items-center justify-center">
+                <h4 class="font-black text-sm uppercase tracking-tight text-neutral-800">Transactional Interface</h4>
+            </div>
+        </div>
+
+        <div class="glass-panel rounded-2xl group magnetic-target cursor-none ui-trigger overflow-hidden flex flex-col transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]" 
+            data-gallery="images/coffee_page/landing_page.png, images/coffee_page/origin.png, images/coffee_page/philosophy.png,
+            images/coffee_page/review.png, images/coffee_page/single_origins.png, images/coffee_page/subscribe.png,
+            images/coffee_page/experience.png, images/coffee_page/contact.png,">
+            
+            <div class="relative h-56 w-full overflow-hidden bg-[#1A1A1A]">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex items-center justify-center">
+                    <span class="font-mono text-[10px] tracking-widest text-white/90 border border-white/20 px-4 py-1.5 rounded-sm bg-black/40 backdrop-blur-md">
+                        [ ENTER_GALLERY ]
+                    </span>
+                </div>
+                <img src="images/coffee_landing.png" class="h-full w-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+            </div>
+            
+            <div class="p-5 text-center border-t border-black/5 bg-transparent flex-1 flex items-center justify-center">
+                <h4 class="font-black text-sm uppercase tracking-tight text-neutral-800">Transactional Interface</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="lightbox-modal" class="fixed inset-0 z-[110] flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500" style="background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+    
+    <button id="close-lightbox" class="absolute top-8 right-8 text-white/40 hover:text-white transition-colors magnetic-target z-[120] cursor-none">
+        <iconify-icon icon="solar:close-circle-linear" class="text-4xl"></iconify-icon>
+    </button>
+
+    <div class="w-full h-[80vh] md:h-[85vh] relative flex items-center justify-center overflow-hidden z-[115]">
+        <div id="gallery-track" class="relative w-full h-full flex items-center justify-center"></div>
+    </div>
+
+    <div class="h-16 shrink-0 w-full flex items-center justify-center bg-transparent z-[120] pb-4">
+        <div id="gal-dots" class="flex gap-3 items-center"></div>
+    </div>
+</div>
+</section>
+
+    <section class="py-32 content-layer border-t border-black/5 bg-white/40">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-12">
+            <div>
+                <h2 class="text-[clamp(3rem,6vw,5rem)] font-black tracking-tight leading-none mb-4">
+                    Get In <span>Touch</span>
+                </h2>
+                <p class="text-sm text-neutral-500 font-medium tracking-wide uppercase">Based in Sarawak, Malaysia</p>
+            </div>
+
+            <div class="w-full md:w-1/2 flex flex-col gap-6 pt-4">
+                <a href="#" class="contact-trigger group flex justify-between items-center py-4 border-b border-black/10 hover:border-black transition-colors magnetic-target">
+                    <div class="flex items-center gap-4">
+                        <span class="text-[10px] font-mono text-neutral-400">01</span>
+                        <span class="font-bold tracking-widest uppercase">lingcent00@gmail.com</span>
+                    </div>
+                    <iconify-icon icon="solar:letter-linear" class="text-xl text-neutral-400 group-hover:text-black transition-colors"></iconify-icon>
+                </a>
+                
+                <a href="https://github.com/LingCent?tab=repositories" target="_blank" rel="noopener noreferrer" class="group flex justify-between items-center py-4 border-b border-black/10 hover:border-black transition-colors magnetic-target">
+                    <div class="flex items-center gap-4">
+                        <span class="text-[10px] font-mono text-neutral-400">02</span>
+                        <span class="font-bold tracking-widest uppercase">GitHub Repositories</span>
+                    </div>
+                    <iconify-icon icon="mdi:github" class="text-xl text-neutral-400 group-hover:text-black transition-colors"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="terminal-modal" class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500" style="background: rgba(247, 247, 245, 0.6); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);">
+        <div class="w-[90%] max-w-3xl h-[400px] rounded-xl bg-[#0D0D0C] shadow-2xl relative overflow-hidden flex flex-col transform scale-95 transition-transform duration-500" id="terminal-box" style="border: 1px solid rgba(255,255,255,0.1);">
+            <div class="scanline absolute inset-0 z-10"></div>
+            <div class="h-8 border-b border-white/10 flex items-center px-4 bg-white/5 relative z-20">
+                <div class="flex gap-2">
+                    <button id="close-terminal" class="w-3 h-3 rounded-full bg-neutral-600 hover:bg-red-500 transition-colors magnetic-target"></button>
+                    <div class="w-3 h-3 rounded-full bg-neutral-800"></div>
+                    <div class="w-3 h-3 rounded-full bg-neutral-800"></div>
+                </div>
+                <div class="absolute w-full text-center text-[10px] text-neutral-500 font-mono tracking-widest pointer-events-none">SECURE_LINK_ESTABLISHED</div>
+            </div>
+            <div class="p-6 font-mono text-[#CBBFA9] flex-1 overflow-y-auto relative z-20 text-sm md:text-base leading-relaxed">
+                <div id="term-history" class="mb-2"></div>
+                <div class="flex">
+                    <span class="mr-3 text-neutral-400">root@wonglingcent:~#</span>
+                    <span id="term-typewriter" class="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"></span>
+                    <span id="term-cursor" class="w-2.5 h-5 bg-white ml-1 animate-pulse hidden"></span>
+                </div>
+                <div id="input-container" class="flex mt-2 hidden">
+                    <span class="mr-3 text-[#CBBFA9]">></span>
+                    <form id="term-form" class="flex-1">
+                        <input type="text" id="term-input" class="w-full bg-transparent text-white caret-white" autocomplete="off" spellcheck="false">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/engine.js" defer></script>
+
+</body>
+</html>
